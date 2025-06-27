@@ -2,6 +2,9 @@ services:
   - type: web
     name: kroatien-trainer
     env: node
-    buildCommand: npm install
+    buildCommand: ""
     startCommand: node server/server.js
-    rootDir: .
+    plan: free
+    branch: main
+    repo: https://github.com/lucio2323232/kroatien
+    autoDeploy: true
