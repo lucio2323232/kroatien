@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: kroatien-trainer
+    env: node
+    buildCommand: npm install
+    startCommand: node server/server.js
+    rootDir: .
